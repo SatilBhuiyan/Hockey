@@ -28,7 +28,7 @@
   </head>
   <body class="eb-garamond">
     <header class="container mx-auto">
-      <nav class="mt-10">
+      <nav class="my-10 mr-6 lg:mr-0">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -60,7 +60,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost gap-0 font-extrabold text-4xl"
+            <a class="btn-ghost gap-0 font-extrabold text-4xl"
               >Hockey<span class="text-[#FF4240]">’</span>s</a
             >
           </div>
@@ -81,12 +81,14 @@
                 class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
               </svg>
             </button>
             <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
@@ -95,8 +97,29 @@
       </nav>
     </header>
 
-    <main>
-        
+    <main class="container mx-auto">
+      <!-- hero section -->
+      <section class="">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative gap-6 w-full flex flex-col items-center lg:block">
+            <img
+              alt="Tailwind CSS slide example"
+              src="Images/1.png"
+              class="w-[335px] md:w-[700px] lg:w-full h-[200px] md:h-[400px] lg:h-[550px]"
+            />
+            <div
+              class="absolute lg:left-10 top-[45%] md:top-[55%] lg:top-[90%] flex -translate-y-1/2 transform gap-3 "
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+            <div class="relative w-[335px] h-[150px] bg-black rounded-xl p-4 lg:p-8 lg:absolute lg:right-10 lg:top-[65%] md:w-[700px] lg:w-[566px] md:h-[200px] lg:h-40">
+                <h3 class="font-extrabold text-xl text-white">Meet all the heroes from the field</h3>
+                <p class="font-medium mt-4 text-[#ffffff8c]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
